@@ -16,7 +16,6 @@ def get_cosine(list1, list2):
     similarity = cosine_sim[0, 1]
 
     print("list 1: " + str(list1) + " list 2: " + str(list2) + "-------->" + str(similarity))
-
     return similarity
 
 

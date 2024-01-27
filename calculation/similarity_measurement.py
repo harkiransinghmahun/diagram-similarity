@@ -1,13 +1,13 @@
 # Imports
 from calculation.consine_similarity import get_cosine
 from calculation.utils import initialise_2d_matrix, print_matrix
-from data.sequence_diagram_data import objects_map, object_message_map_1, object_message_map_2, messages_1, messages_2
+from data.poc_SQ_data import objects_map, object_message_map_1, object_message_map_2, messages_1, messages_2
 
 # Weights
 weight_object = 0.2
 weight_message = 0.8
 
-weight_object_source = 0.1
+weight_source = 0.1
 weight_class_source = 0.1
 weight_method_type = 0.3
 weight_method_name = 0.3
@@ -101,8 +101,6 @@ def get_message_similarity(messages_1, messages_2):
     m_sim = m_sim / max(m_len_1, m_len_2)
 
     return m_sim
-
-
 
 
 def compute_message_similarity(msg_1, msg_2):
